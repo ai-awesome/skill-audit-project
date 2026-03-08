@@ -1,5 +1,5 @@
 ---
-name: project-audit
+name: audit-project
 description: >
   Performs a comprehensive project audit that evaluates whether the current implementation
   achieves its original goals, identifies gaps, and proposes a prioritized roadmap for
