@@ -11,19 +11,20 @@ A [Claude Code](https://docs.anthropic.com/en/docs/claude-code) skill that perfo
 Clone this repository:
 
 ```sh
-git clone https://github.com/ai-awesome/skill-project-audit.git
+git clone https://github.com/ai-awesome/skill-audit-project.git
 ```
 
-Then install the skill from the local path:
+Then symlink the skill into your Claude global config directory:
 
 ```sh
-claude mcp add-skill /path/to/skill-project-audit
+mkdir -p ~/.claude/skills/project-audit
+ln -sf "$(pwd)/skill-audit-project/SKILL.md" ~/.claude/skills/project-audit/SKILL.md
 ```
 
-Or install directly from the remote URL:
+Or add directly as a submodule in your dotfiles:
 
 ```sh
-claude mcp add-skill https://github.com/ai-awesome/skill-project-audit
+git submodule add https://github.com/ai-awesome/skill-audit-project.git ~/.claude/skills/project-audit
 ```
 
 ## Customization
